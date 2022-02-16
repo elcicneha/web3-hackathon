@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>Web3 World Championship</title>
+    <style>
+        html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+        .hero-signup {
+            background: linear-gradient(90deg,
+                    rgba(30, 14, 65, 1) 0%,
+                    rgba(48, 48, 132, 1) 100%);
+        }
+        .signup-container{
+            
+            width: 90rem;
+            background-color: blueviolet;
+            margin: 5rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem 8rem;
+        }
+        .signup-pre-heading,.signup-main-heading{
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .signup-main-heading{
+            font-size: 8rem;
+            margin-top: -2rem;
+        }
+        .signup-subheading{
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 4rem;
+        }
+        input {
+            background: none;
+  border: 0.2rem solid gray;
+            height: 4rem;
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
+
+        input:focus {
+            outline: none;
+        }
+        .signup{
+            display: flex;
+            flex-direction: column;
+        }
+        .signup .fullname{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .signup .name{
+            margin-right: 5rem;
+
+        }
+        .email{
+            margin-bottom: 3rem;
+        }
+        
+        button{
+            padding: 1rem;
+            border: 0.5rem solid rgb(32, 0, 61);
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            background: none;
+            margin-bottom: 2rem;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-size: 1.6rem;
+        }
+        @media screen and (max-width: 1200px) {
+            html{
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-signup">
+        <!-- <div class="nav">
+        <div class="logo"></div>
+        <div class="links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="" class="nav-link">Prizes</a>
+          <button type="submit">Sign Up</button>
+        </div>
+        </div> -->
+        <div class="signup-container">
+            <h3 class="signup-pre-heading">First 500 Sign ups
+            </h3>
+            <h1 class="signup-main-heading">get free unique nfts</h1>
+            <p class="signup-subheading">Sign up now to win a Unique NFT, absolutely FREE.</p>
+            <form action="post" class="signup">
+                <div class="fullname">
+                    <span>*First Name 
+                        <input type="text" class="name" >
+                    </span>
+                     <span>
+                         *Last Name
+                         <input type="text" class="lastname" >
+                     </span>
+                    
+                </div>
+                <span>*Email<input type="email" name="" id="" class="email" ></span>
+                
+                <button type="submit" >
+                    Sign Up
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <!-- <footer>
+        <div class="social-icons">
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-linkedin-box-fill"></i>
+        </div>
+        <p class="madeby">Designed by Elcicneha</p>
+    </footer> -->
+</body>
+
+</html>
