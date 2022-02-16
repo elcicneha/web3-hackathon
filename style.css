@@ -70,28 +70,39 @@ footer {
   );
 }
 .nav {
-  height: 4rem;
+  height: 3rem;
   padding: 3rem 5rem;
   display: flex;
   justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
 }
+
+.links {
+  margin: 0;
+}
+
 .nav a {
   color: #ffffff;
   font-size: 2rem;
+
 }
+
 .nav button {
-  background-color: #5a139b;
+  border: 2px solid #ffffff;
+  background: none;
   color: #ffffff;
-  border: none;
   font-size: 1.8rem;
   padding: 1rem 3rem;
-  border-radius: 1rem;
+  margin-top: -1.5rem;
 }
+
 .nav button:hover {
-  background-color: #f47f66;
+  background-color: #ffffff;
+  color: blueviolet;
 }
+
 .nav a:hover {
-  color: #ffe600;
+  text-decoration: underline;
 }
 
 .nav-link {

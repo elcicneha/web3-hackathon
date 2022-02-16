@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>Web3 World Championship</title>
+    <style>
+        @font-face {
+            font-family: Integral CF;
+            src: url(IntegralCF-Regular.ttf);
+            font-weight: normal;
+        }
+
+        html {
+            font-size: 10px;
+            overflow-x: hidden;
+        }
+
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+            font-family: "Integral CF", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .nav {
+            height: 3rem;
+            padding: 3rem 5rem;
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(90deg,
+                    rgba(30, 14, 65, 1) 0%,
+                    rgba(48, 48, 132, 1) 100%);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .links {
+            margin: 0;
+        }
+
+        .nav a {
+            color: #ffffff;
+            font-size: 2rem;
+
+        }
+
+        .nav button {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            font-size: 1.8rem;
+            padding: 1rem 3rem;
+            margin-top: -1.5rem;
+        }
+
+        .nav button:hover {
+            background-color: #ffffff;
+            color: blueviolet;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-link {
+            margin-right: 5rem;
+        }
+
+        .hero-signup {
+            background-image: url('./images/nft-BG.png');
+            background-size: cover;
+            padding: 5rem;
+        }
+
+        .signup-container , .thankyou-container{
+
+            width: 70%;
+            background: linear-gradient(90deg,
+                    rgba(30, 14, 65, 1) 0%,
+                    rgba(48, 48, 132, 1) 100%);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem 5rem;
+            border-radius: 0.5rem;
+                text-align: center;
+        }
+
+        .signup-pre-heading,
+        .signup-main-heading {
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .signup-main-heading {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        .signup-subheading {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 4rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input {
+            background: none;
+            border: 0.2rem solid white;
+            height: 4rem;
+            font-size: 2rem;
+            padding: 0 2rem;
+            opacity: 20%;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .signup {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup .fullname {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .signup .firstname {
+            margin-right: 5rem;
+
+        }
+
+        .email {
+            margin-bottom: 3rem;
+        }
+
+        button {
+            padding: 1rem;
+            border: 0.2rem solid rgba(181, 73, 241, 1);
+            color: rgba(181, 73, 241, 1);
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            background: none;
+            margin-bottom: 2rem;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+        }
+
+        footer {
+            background: linear-gradient(90deg,
+                    rgba(30, 14, 65, 1) 0%,
+                    rgba(48, 48, 132, 1) 100%);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 2.5rem 0;
+            color: #ffffff;
+        }
+
+        .social-icons {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .social-icons i {
+            margin-right: 1rem;
+        }
+
+        .social-icons i:hover {
+            color: #0967ff;
+        }
+
+        .madeby {
+            font-size: 1.2rem;
+        }
+        .thankyou-container{
+            padding: 8rem 5rem;
+            width: 50%;
+            margin: 8% auto;
+            display: none;
+        }
+        .thankyou-container h1{
+            color: #ffffff;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+        .thankyou-container p{
+            font-size: 3rem;
+            color: #ffffff;
+        }
+        @media screen and (max-width: 1200px) {
+            html {
+                font-size: 9px;
+            }
+        }
+        @media screen and (max-width: 1060px) {
+            .signup-pre-heading{
+                font-size: 2rem;
+            }
+            .signup-main-heading{
+                font-size: 4rem;
+            }
+            .hero-signup{
+                height: 80vh;
+            }
+            .signup-container{
+                margin-top: 5%;
+            }
+        }
+        @media screen and (max-width: 840px) {
+            .signup .fullname{
+                flex-wrap: wrap;
+                justify-content: left;
+                width: 20rem;
+            }
+            .signup .name , .lastname{
+            margin-right: 0rem;
+        }
+        }
+        @media screen and (max-width: 720px) {
+            .signup-container{
+                width: 90%;
+                padding: 3rem 2rem;
+                margin: 0;
+            }
+            .hero-signup{
+                padding: 5rem 2rem;
+            }
+        }
+        @media screen and (max-width: 420px){
+           .signup-main-heading{
+               font-weight: 400;
+               font-size: 3rem;
+           }
+           .signup-pre-heading{
+               font-size: 2rem;
+               font-weight: 200;
+           }
+           .signup{
+               padding: 0 2rem;
+           }
+           .signup-container{
+            margin-top: -3rem;
+           }
+           .thankyou-container h1{
+               font-size: 3rem;
+           }
+           .thankyou-container p{
+               font-size: 2rem;
+           }
+           .hero-signup{
+               height: 70vh;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="signup.html"><button type="submit">Sign Up</button></a>
+          </div>
+    </div>
+    <div class="hero-signup">
+            <div class="thankyou-container">
+                <h1 class="thankyou">Thankyou for registering with us.</h1> 
+                <p class="thankyou">You will recieve an email shortly.</p>
+            </div>
+        <div class="signup-container">
+            
+            <h3 class="signup-pre-heading">First 500 Sign ups
+            </h3>
+            <h1 class="signup-main-heading">get free unique nfts</h1>
+            <p class="signup-subheading">Sign up now to win a Unique NFT, absolutely FREE.</p>
+            <form method="POST" 
+            action="https://script.google.com/macros/s/AKfycbxmhwUgDGxVrwQhIa9QW-9uDSuZYEPL4ITB7NqA8Xy-fPA2J_BboUKCD7b0vcho8eCZ/exec" onsubmit="thankyou()" class="signup">
+                
+                <div class="fullname">
+                    <span>*First Name
+                        <input type="text" class="firstname" name="First Name" required>
+                    </span>
+                    <span>
+                        *Last Name
+                        <input type="text" class="lastname" name="Last Name" required>
+                    </span>
+
+                </div>
+                <span>*Email<input type="email" name="Email" id="" class="email" required></span>
+
+                <button type="submit" onclick="thankyou()">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+        
+
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-linkedin-box-fill"></i>
+        </div>
+        <p class="madeby">Designed by Elcicneha</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function thankyou(){
+            $(".signup-container").css("display", "none");
+            $(".thankyou-container").css("display", "block");
+        }
+    </script>
+    
+</body>
+
+</html>

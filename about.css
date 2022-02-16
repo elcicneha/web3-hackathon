@@ -2,36 +2,33 @@
     font-family: Integral CF;
     src: url(IntegralCF-Regular.ttf);
 }
-*{
-  overflow-x: hidden;
+html{
+  font-size: 10px;
 }
 body{
     background-image: url("images/hero-BG.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    overflow-x: hidden;
 }
 .container{
     text-align: center;
     margin: 0 auto 10% auto;
     color: white;
 }
-.container img{
-  margin-top: 10%;
-  width: 100vw;
-}
 .info{
-    max-width: 43%;
+  max-width: 60%;
     margin: 0 auto 10% auto;
 }
 p{
     padding-bottom: 1%;
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.7rem;
+    font-size: 2rem;
+    line-height: normal;
 }
 h1{
+  margin-top: 10rem;
     font-size: 4rem;
-    padding-bottom: 4%;
     font-family: Integral CF;
     font-weight: 400;
 }
@@ -46,7 +43,9 @@ footer {
     font-size: 2rem;
     text-align: center;
   }
-  
+  .backimg{
+    width: 100%;
+  }
   .social-icons i {
     margin-right: 1rem;
   }
@@ -58,3 +57,99 @@ footer {
   .madeby {
     font-size: 1.2rem;
   }
+  .nav {
+    margin-top: -13%;
+    height: 3rem;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+  }
+  .links {
+    margin: 0;
+  }
+  .logoimg{
+    width: 15rem;
+    margin-top: -5rem;
+  }
+  .nav a {
+    color: #ffffff;
+    font-size: 2rem;
+  
+  }
+  
+  .nav button {
+    border: 2px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: -1.5rem;
+    text-decoration: none;
+  }
+  
+  .nav button:hover {
+    background-color: #ffffff;
+    color: blueviolet;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-link {
+    margin-right: 5rem;
+  }
+  .nav .links i{
+    font-size: 4rem;
+    display: none;
+  }
+  @media screen and (max-width: 800px){
+.nav .logo{
+  margin-top: -3rem;
+}
+.logoimg{
+  width: 10rem;
+}
+.nav .links i{
+  display: block;
+  margin-top: -5rem;
+}
+.nav-link{
+  display: none;
+}
+.nav button{
+  display: none;
+}
+
+  }
+  @media screen and (max-width: 450px){
+    .nav{
+      padding: 3rem 2rem;
+    }
+    .nav .links i{
+      font-size: 2rem;
+      margin-top: -4rem;
+    }
+    
+.logoimg{
+  width: 6rem;
+}
+.nav .logo{
+  margin-top: -4.5rem;
+}
+.backimg{
+margin-top: 5rem;
+
+}
+h1{
+  margin-top: -5rem;
+}
+.info{
+  max-width: 90%;
+}
+.info p{
+  font-size: 1.5rem;
+}
+  }
+  
